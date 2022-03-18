@@ -1,6 +1,6 @@
 {
-    "name": "Kfir Smart Home",
-    "version": "1.2.4",
+    "name": "Kfir Smart Home 1.2.5",
+    "version": "1.2.5",
     "slug": "ewelink_smart_home_slug",
     "description": "connect eWeLink with home-assistant",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -15,7 +15,7 @@
         "3000/tcp": "Web interface"
     },
     "panel_icon": "mdi:earth",
-    "panel_title": "Kfir Smart Home",
+    "panel_title": "Kfir Smart Home 1.2.5",
     "hassio_api": true,
     "webui": "http://[HOST]:[PORT:3000]",
     "homeassistant_api": true,
