@@ -50,6 +50,7 @@ var Mdns = (function () {
                 var key = '';
                 var _loop_1 = function (i) {
                     var data = answers[i].data;
+                    console.log(answers);
                     switch (answers[i].type) {
                         case 'PTR':
                             if (("" + data).indexOf('ewelink') === -1) {
@@ -90,6 +91,8 @@ var Mdns = (function () {
                 if (!key) {
                     return;
                 }
+                console.log('print temp: ');
+                console.log(tmp.txt);
                 if (((_a = tmp.txt) === null || _a === void 0 ? void 0 : _a.type) === 'diy_plug') {
                     console.log('Found Diy Switch ');
                     var diyDevice = Controller_1.default.setDevice({
