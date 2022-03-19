@@ -94,7 +94,8 @@ var Mdns = (function () {
                 console.log('print temp: ');
                 console.log(tmp.txt);
                 if (((_a = tmp.txt) === null || _a === void 0 ? void 0 : _a.type) === 'diy_plug') {
-                    console.log('Found Diy Switch ');
+                    console.log('Found Diy# Switch ');
+                    console.log(_a);
                     var diyDevice = Controller_1.default.setDevice({
                         id: key,
                         data: tmp,
@@ -103,7 +104,8 @@ var Mdns = (function () {
                     callback && callback(diyDevice);
                 }
                 else if (((_b = tmp.txt) === null || _b === void 0 ? void 0 : _b.type) === ELanType_1.default.Plug) {
-                    console.log('Found Lan Switch');
+                    console.log('Found Lan# Switch');
+                    console.log(_b);
                     var lanDevice = Controller_1.default.setDevice({
                         id: key,
                         data: tmp,
@@ -113,7 +115,8 @@ var Mdns = (function () {
                     callback && callback(lanDevice);
                 }
                 else if (((_c = tmp.txt) === null || _c === void 0 ? void 0 : _c.type) === ELanType_1.default.Strip) {
-                    console.log('Found Lan Multi-Switch');
+                    console.log('Found Lan# Multi-Switch');
+                    console.log(_c);
                     var lanDevice = Controller_1.default.setDevice({
                         id: key,
                         data: tmp,
